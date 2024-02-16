@@ -1,26 +1,39 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".square",{
+gsap.to(".square", {
     x: 700,
     duration: 2,
     scrollTrigger: {
-        trigger: ".square2"
+        trigger: ".square",
+        start: "top 30%",
+        markers: true
     }
 })
 
 
 
+
 /* 
-gsap.to(".target",{
-    x: val,
-    duration: durationTime
-})
+Trigger the animation when element comes halfway in the viewport. 
+
+start and end properties. 
+
+start: 400: 400px from bottom of view port
+when square element crosses 400px from bottom starts animation. 
+
+start: "top center"
+Means when top portion of element reaches the center of view port starts to animate
+
+start: "top 30%",
+Means when top portion of element reaches the 30% of view port from upside, starts to animate
 
 
-.target: Element that we want to animate
-x: translation in x direction, val: how much to be moved
-duration: Animation duration time
-
-scrollTrigger: Trigger for animation. 
-.square2 when came into view port starts to animate .square1. 
+markers: true; 
+markers: {
+            startColor: 'purple',
+            endColor: 'fuchsia',
+            fontSize: '4rem',
+            indent: 100 //Moves the markers position from right
+        }
+        
 */
