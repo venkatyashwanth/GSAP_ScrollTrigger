@@ -6,7 +6,7 @@ gsap.to(".square", {
     scrollTrigger: {
         trigger: ".square",
         start: "top 30%", 
-        end: "center 20%",
+        end: () => `+=${document.querySelector(".square").offsetHeight}`,
         markers: true,
         toggleClass: "red"
     }
@@ -16,5 +16,7 @@ gsap.to(".square", {
 
 
 /* 
-Toggle Class:         
+using function for end in scroll trigger, to get height of target element. 
+
+The HTMLElement.offsetHeight read-only property returns the height of the element, including vertical paddings and borders, as an integer. 
 */
