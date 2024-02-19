@@ -17,6 +17,7 @@ body{
     width: 150px;
     height: 150px;
     background-color: fuchsia;
+    transition: all .8s;
 }
 
 .square2{
@@ -24,4 +25,9 @@ body{
     width: 150px;
     height: 150px;
     background-color: blue;
+}
+
+.red{
+    background-color: red;
+    border-radius: 50%;
 }
