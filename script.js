@@ -1,14 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".square", {
-    x: 700,
+    // x: 700,
     duration: 3,
     scrollTrigger: {
-        trigger: ".square",
+        trigger: ".square2",
         start: "top 60%", 
         end: "top 40%",
-        scrub: 4,
+        scrub: true,
         toggleActions: 'restart pause resume complete',
+        pin: ".square",
+        pinSpacing: true,
         markers: {
             startColor: "purple",
             endColor: "fuchsia",
@@ -21,11 +23,12 @@ gsap.to(".square", {
 
 
 /* 
-tutorial- 4: 
-https://www.youtube.com/watch?v=SCfZBtedicw&list=PLMPgoZdlPumexxtvuPUB3TY7LExI1N_Xp&index=4
+tutorial- 5: 
+https://www.youtube.com/watch?v=FH0B3Gdm0P0&list=PLMPgoZdlPumexxtvuPUB3TY7LExI1N_Xp&index=5
 
-Scrub
+pin property: 
+Target element sticks at the start.
 
-scrub: true;
-scrub: 4 //time for smoothing
+        pinSpacing: false/true,
+
 */
