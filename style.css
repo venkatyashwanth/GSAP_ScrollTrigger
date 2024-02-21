@@ -1,3 +1,6 @@
+html{
+    font-size: 62.5%;
+}
 body{
     margin: 0;
 }
@@ -17,17 +20,5 @@ body{
     width: 150px;
     height: 150px;
     background-color: fuchsia;
-    transition: all .8s;
 }
 
-.square2{
-    margin-top: 300px;
-    width: 150px;
-    height: 150px;
-    background-color: blue;
-}
-
-.red{
-    background-color: red;
-    border-radius: 50%;
-}
